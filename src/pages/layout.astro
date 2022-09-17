@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Highlighting Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cousine&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/theme.css" />
+    <style is:global>
+      * {
+        font-family: 'Cousine', monospace;
+        color: var(--color-fg-default);
+      }
+
+      body {
+        padding: 2em;
+        max-width: 720px;
+        margin-inline: auto;
+        background-color: var(--color-canvas-default);
+      }
+
+      pre {
+        padding: 2em;
+        background-color: var(--color-canvas-subtle);
+        border-color: var(--color-border-default);
+        border-radius: 10px;
+        font-weight: 400;
+        line-height: 20px;
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
