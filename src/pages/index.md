@@ -1,5 +1,5 @@
 ---
-layout: ./layout.astro
+layout: ../layouts/indexLayout.astro
 ---
 
 ## Html
