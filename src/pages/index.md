@@ -2,7 +2,7 @@
 layout: ./layout.astro
 ---
 
-html
+## Html
 
 ```html
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ html
 </body>
 ```
 
-bash
+## Bash
 
 ```bash
 #!/bin/bash
@@ -48,7 +48,7 @@ genApacheConf(){
 echo '"quoted"' | tr -d \" > text.txt
 ```
 
-cpp
+## C++
 
 ```cpp
 #include <iostream>
@@ -67,7 +67,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-csharp
+## C#
 
 ```csharp
 using System.IO.Compression;
@@ -89,7 +89,7 @@ namespace MyApplication
 }
 ```
 
-css
+## Css
 
 ```css
 @font-face {
@@ -113,7 +113,7 @@ body,
 }
 ```
 
-markdown
+## Markdown
 
 ```markdown
 # hello world
@@ -139,7 +139,7 @@ you can write text [with links](http://example.com) inline or [link references][
 2. two thing `i can write code`, and `more` wipee!
 ```
 
-diff
+## Diff
 
 ```diff
 Index: languages/ini.js
@@ -174,7 +174,7 @@ Index: languages/ini.js
   It is important to spell
 ```
 
-ruby
+## Ruby
 
 ```ruby
 # The Greeter class
@@ -192,7 +192,7 @@ g = Greeter.new("world")
 g.salute
 ```
 
-go
+## Go
 
 ```go
 package main
@@ -209,7 +209,7 @@ func main() {
 }
 ```
 
-graphql
+## GraphQL
 
 ```graphql
 # Graphql detection template
@@ -252,24 +252,45 @@ input StoryLikeSubscribeInput {
 }
 ```
 
-ini
+## Toml
 
-```ini
-; boilerplate
-[package]
-name = "some_name"
-authors = ["Author"]
-description = "This is \
-a description"
+```toml
+# This is a TOML document.
 
-[[lib]]
-name = ${NAME}
-default = True
-auto = no
-counter = 1_000
+title = "TOML Example"
+
+[owner]
+name = "Tom Preston-Werner"
+dob = 1979-05-27T07:32:00-08:00 # First class dates
+
+[database]
+server = "192.168.1.1"
+ports = [ 8000, 8001, 8002 ]
+connection_max = 5000
+enabled = true
+
+[servers]
+
+  # Indentation (tabs and/or spaces) is allowed but not required
+  [servers.alpha]
+  ip = "10.0.0.1"
+  dc = "eqdc10"
+
+  [servers.beta]
+  ip = "10.0.0.2"
+  dc = "eqdc10"
+
+[clients]
+data = [ ["gamma", "delta"], [1, 2] ]
+
+# Line breaks are OK when inside arrays
+hosts = [
+  "alpha",
+  "omega"
+]
 ```
 
-java
+## Java
 
 ```java
 /**
@@ -290,7 +311,7 @@ public abstract strictfp class L2Char extends L2Object {
 }
 ```
 
-js
+## JavaScript
 
 ```js
 function $initHighlight(block, cls) {
@@ -316,7 +337,7 @@ function $initHighlight(block, cls) {
 export  $initHighlight;
 ```
 
-json
+## Json
 
 ```json
 [
@@ -333,7 +354,7 @@ json
 ]
 ```
 
-kotlin
+## Kotlin
 
 ```kotlin
 import kotlinx.serialization.Serializable
@@ -367,7 +388,7 @@ fun main() {
 }
 ```
 
-less
+## Less
 
 ```less
 @import 'fruits';
@@ -401,7 +422,7 @@ section > .foo + #bar:hover [href*='less'] {
 }
 ```
 
-lua
+## Lua
 
 ```lua
 --[[
@@ -438,7 +459,7 @@ comment ]==]
 ]] ]=] ]==]
 ```
 
-makefile
+## Makefile
 
 ```makefile
 # Makefile
@@ -456,7 +477,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 ```
 
-perl
+## Perl
 
 ```perl
 # loads object
@@ -502,25 +523,7 @@ __END__
 POD till the end of file
 ```
 
-objective-c
-
-```objective-c
-#import <UIKit/UIKit.h>
-#import "Dependency.h"
-
-@protocol WorldDataSource
-@optional
-- (NSString*)worldName;
-@required
-- (BOOL)allowsToLive;
-@end
-
-@property (nonatomic, readonly) NSString *title;
-- (IBAction) show;
-@end
-```
-
-php
+## Php
 
 ```php
 require_once 'Zend/Uri/Http.php';
@@ -589,7 +592,7 @@ datahere */
 datahere
 ```
 
-php
+## Php Template
 
 ```php
 <html>
@@ -602,7 +605,7 @@ echo "Hello, world!";
 </body>
 ```
 
-python
+## Python
 
 ```python
 @requires_authorization(roles=["ADMIN"])
@@ -619,7 +622,7 @@ class SomeClass:
 ... prompt'''
 ```
 
-python
+## Python REPL
 
 ```python
 >>> v = "foo = 42"
@@ -639,7 +642,7 @@ foo = 42"
 ...     pass
 ```
 
-r
+## R
 
 ```r
 require(stats)
@@ -690,7 +693,7 @@ iris %>%
 #> #   df.residual <int>
 ```
 
-rust
+## Rust
 
 ```rust
 #[derive(Debug)]
@@ -711,7 +714,7 @@ impl From<&'a str> for State {
 }
 ```
 
-scss
+## Scss
 
 ```scss
 @import 'compass/reset';
@@ -794,7 +797,7 @@ a {
 }
 ```
 
-sh
+## Terminal
 
 ```sh
 $ echo $EDITOR
@@ -810,7 +813,7 @@ All
 done!
 ```
 
-sql
+## SQL
 
 ```sql
 CREATE TABLE "topic" (
@@ -827,7 +830,7 @@ insert into "topic" ("forum_id", "subject")
 values (2, 'D''artagnian');
 ```
 
-swift
+## Swift
 
 ```swift
 import Foundation
@@ -847,7 +850,7 @@ import Foundation
 }
 ```
 
-yaml
+## Yaml
 
 ```yaml
 ---
@@ -891,7 +894,7 @@ array_nested:
 - comment
 ```
 
-ts
+## TypeScript
 
 ```ts
 class MyClass {
@@ -910,54 +913,7 @@ declare magicNumber number;
 myArray.forEach(() => { }); // fat arrow syntax
 ```
 
-vb
-
-```vb
-Imports System
-Imports System.IO
-#Const DEBUG = True
-
-Namespace Highlighter.Test
-  ''' <summary>This is an example class.</summary>
-  Public Class Program
-    Protected Shared hello As Integer = 3
-    Private Const ABC As Boolean = False
-
-#Region "Code"
-    ' Cheers!
-    <STAThread()> _
-    Public Shared Sub Main(ByVal args() As String, ParamArray arr As Object) Handles Form1.Click
-      On Error Resume Next
-      If ABC Then
-        While ABC : Console.WriteLine() : End While
-        For i As Long = 0 To 1000 Step 123
-          Try
-            System.Windows.Forms.MessageBox.Show(CInt("1").ToString())
-          Catch ex As Exception       ' What are you doing? Well...
-            Dim exp = CType(ex, IOException)
-            REM ORZ
-            Return
-          End Try
-        Next
-      Else
-        Dim l As New System.Collections.List<String>()
-        SyncLock l
-          If TypeOf l Is Decimal And l IsNot Nothing Then
-            RemoveHandler button1.Paint, delegate
-          End If
-          Dim d = New System.Threading.Thread(AddressOf ThreadProc)
-          Dim a = New Action(Sub(x, y) x + y)
-          Static u = From x As String In l Select x.Substring(2, 4) Where x.Length > 0
-        End SyncLock
-        Do : Laugh() : Loop Until hello = 4
-      End If
-    End Sub
-#End Region
-  End Class
-End Namespace
-```
-
-wasm
+## Web Assembly
 
 ```wasm
 (module

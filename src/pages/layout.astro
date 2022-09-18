@@ -1,27 +1,36 @@
+---
+import ThemeSwitcher from '../components/ThemeSwitcher.astro';
+---
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Highlighting Preview</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cousine&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/theme.css" />
+    <link rel="stylesheet" href="css/github-theme.css" />
     <style is:global>
       * {
+        box-sizing: border-box;
         font-family: 'Cousine', monospace;
         color: var(--color-fg-default);
       }
 
       body {
         padding: 2em;
-        max-width: 720px;
+        max-width: 840px;
         margin-inline: auto;
         background-color: var(--color-canvas-default);
+      }
+
+      h2 {
+        margin-top: 2em;
       }
 
       pre {
@@ -30,12 +39,15 @@
         border-color: var(--color-border-default);
         border-radius: 10px;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 24px;
         overflow-x: auto;
       }
     </style>
+    <title>Code Block</title>
   </head>
   <body>
+    <ThemeSwitcher client:load />
     <slot />
+    <script></script>
   </body>
 </html>

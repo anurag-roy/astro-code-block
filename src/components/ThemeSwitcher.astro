@@ -1,0 +1,142 @@
+<style>
+  .theme-toggle {
+    display: inline-flex;
+    /* background-color: hsl(278, 4.1%, 89.1%);
+    border-radius: 4px; */
+    box-shadow: 0 2px 10px hsl(0deg 0% 0% / 14%);
+  }
+
+  .theme-toggle > button {
+    all: unset;
+    background-color: var(--color-canvas-subtle);
+    color: hsl(252, 4%, 44.8%);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    font-size: 15px;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1px;
+    padding: 0.25em 0.75em;
+  }
+
+  .theme-toggle > button:hover {
+    background-color: hsl(252, 96.9%, 97.4%);
+  }
+
+  .theme-toggle > button:focus {
+    position: 'relative';
+    box-shadow: 0 0 0 2px var(--color-fg-default);
+  }
+
+  .theme-toggle > button[data-state='on'] {
+    background-color: hsl(252, 85.1%, 93%);
+    color: hsl(250, 43%, 48%);
+  }
+
+  .theme-toggle > button:first-child {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .theme-toggle > button:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+</style>
+<div
+  class="theme-toggle"
+  role="group"
+  dir="ltr"
+  aria-label="Theme Toggle"
+  tabindex="0"
+  style="outline: none"
+>
+  <button
+    type="button"
+    data-state="on"
+    role="radio"
+    aria-checked="true"
+    aria-label="Light Theme"
+    tabindex="0"
+  >
+    <svg width="32" height="32" viewBox="0 0 24 24">
+      <path
+        fill="#6f6e77"
+        d="M12 4q-.425 0-.712-.288Q11 3.425 11 3V2q0-.425.288-.713Q11.575 1 12 1t.713.287Q13 1.575 13 2v1q0 .425-.287.712Q12.425 4 12 4Zm0 19q-.425 0-.712-.288Q11 22.425 11 22v-1q0-.425.288-.712Q11.575 20 12 20t.713.288Q13 20.575 13 21v1q0 .425-.287.712Q12.425 23 12 23Zm9-10q-.425 0-.712-.288Q20 12.425 20 12t.288-.713Q20.575 11 21 11h1q.425 0 .712.287q.288.288.288.713t-.288.712Q22.425 13 22 13ZM2 13q-.425 0-.712-.288Q1 12.425 1 12t.288-.713Q1.575 11 2 11h1q.425 0 .713.287Q4 11.575 4 12t-.287.712Q3.425 13 3 13Zm16-7q-.275-.275-.275-.688q0-.412.275-.712l.35-.375q.275-.3.7-.3q.425 0 .725.3t.3.725q0 .425-.3.725l-.375.35q-.3.275-.7.275q-.4 0-.7-.3ZM4.225 19.775q-.3-.3-.3-.725t.3-.725l.375-.35q.3-.275.7-.275q.4 0 .7.3q.275.275.288.7q.012.425-.288.7l-.35.375q-.275.3-.7.3q-.425 0-.725-.3Zm14.1 0l-.35-.375q-.275-.3-.275-.7q0-.4.3-.7q.275-.275.7-.288q.425-.012.7.288l.375.35q.3.275.3.7q0 .425-.3.725t-.725.3q-.425 0-.725-.3ZM4.6 6l-.375-.35q-.3-.275-.3-.7q0-.425.3-.725t.725-.3q.425 0 .725.3l.35.375q.275.3.275.7q0 .4-.3.7q-.275.275-.688.275Q4.9 6.275 4.6 6ZM12 18q-2.5 0-4.25-1.75T6 12q0-2.5 1.75-4.25T12 6q2.5 0 4.25 1.75T18 12q0 2.5-1.75 4.25T12 18Z"
+      ></path>
+    </svg>
+  </button>
+  <button
+    type="button"
+    data-state="off"
+    role="radio"
+    aria-checked="false"
+    aria-label="Dark Theme"
+    tabindex="-1"
+  >
+    <svg width="32" height="32" viewBox="0 0 24 24">
+      <path
+        fill="#6f6e77"
+        d="M12 21q-3.775 0-6.388-2.613Q3 15.775 3 12q0-3.45 2.25-5.988Q7.5 3.475 11 3.05q.625-.075.975.45t-.025 1.1q-.425.65-.638 1.375Q11.1 6.7 11.1 7.5q0 2.25 1.575 3.825Q14.25 12.9 16.5 12.9q.775 0 1.538-.225q.762-.225 1.362-.625q.525-.35 1.075-.038q.55.313.475.988q-.35 3.45-2.937 5.725Q15.425 21 12 21Z"
+      ></path>
+    </svg>
+  </button>
+  <button
+    type="button"
+    data-state="off"
+    role="radio"
+    aria-checked="false"
+    aria-label="System Theme"
+    tabindex="-1"
+  >
+    <svg width="32" height="32" viewBox="0 0 24 24">
+      <path
+        fill="#6f6e77"
+        d="M8.65 20H6q-.825 0-1.412-.587Q4 18.825 4 18v-2.65L2.075 13.4Q1.5 12.825 1.5 12t.575-1.4L4 8.65V6q0-.825.588-1.412Q5.175 4 6 4h2.65l1.95-1.925Q11.175 1.5 12 1.5t1.4.575L15.35 4H18q.825 0 1.413.588Q20 5.175 20 6v2.65l1.925 1.95q.575.575.575 1.4t-.575 1.4L20 15.35V18q0 .825-.587 1.413Q18.825 20 18 20h-2.65l-1.95 1.925q-.575.575-1.4.575t-1.4-.575ZM12 17q2.075 0 3.538-1.463Q17 14.075 17 12t-1.462-3.538Q14.075 7 12 7Z"
+      ></path>
+    </svg>
+  </button>
+</div>
+<script>
+  const allThemeToggleButtons = document.querySelectorAll(
+    '.theme-toggle button'
+  );
+
+  const updateTheme = (currentTheme: string) => {
+    allThemeToggleButtons.forEach((b) => {
+      if (b.getAttribute('aria-label') === currentTheme) {
+        b.setAttribute('data-state', 'on');
+      } else {
+        b.setAttribute('data-state', 'off');
+      }
+    });
+
+    switch (currentTheme) {
+      case 'Light Theme': {
+        document.documentElement.setAttribute('data-color-theme', 'light');
+        break;
+      }
+      case 'Dark Theme': {
+        document.documentElement.setAttribute('data-color-theme', 'dark');
+        break;
+      }
+      case 'System Theme': {
+        if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+          document.documentElement.setAttribute('data-color-theme', 'light');
+        } else {
+          document.documentElement.setAttribute('data-color-theme', 'dark');
+        }
+        break;
+      }
+    }
+  };
+
+  allThemeToggleButtons.forEach((b) => {
+    b.addEventListener('click', () => {
+      updateTheme(b.getAttribute('aria-label')!);
+    });
+  });
+</script>
