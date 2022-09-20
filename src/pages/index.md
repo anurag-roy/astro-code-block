@@ -26,6 +26,8 @@ layout: ../layouts/indexLayout.astro
 </body>
 ```
 
+---
+
 ## Bash
 
 ```bash
@@ -48,6 +50,8 @@ genApacheConf(){
 echo '"quoted"' | tr -d \" > text.txt
 ```
 
+---
+
 ## C++
 
 ```cpp
@@ -66,6 +70,8 @@ int main(int argc, char *argv[]) {
   return -2e3 + 12l;
 }
 ```
+
+---
 
 ## C#
 
@@ -88,6 +94,8 @@ namespace MyApplication
     }
 }
 ```
+
+---
 
 ## Css
 
@@ -112,6 +120,8 @@ body,
   }
 }
 ```
+
+---
 
 ## Markdown
 
@@ -138,6 +148,8 @@ you can write text [with links](http://example.com) inline or [link references][
 1. one thing (yeah!)
 2. two thing `i can write code`, and `more` wipee!
 ```
+
+---
 
 ## Diff
 
@@ -174,6 +186,8 @@ Index: languages/ini.js
   It is important to spell
 ```
 
+---
+
 ## Ruby
 
 ```ruby
@@ -192,6 +206,8 @@ g = Greeter.new("world")
 g.salute
 ```
 
+---
+
 ## Go
 
 ```go
@@ -208,6 +224,8 @@ func main() {
     return
 }
 ```
+
+---
 
 ## GraphQL
 
@@ -252,6 +270,8 @@ input StoryLikeSubscribeInput {
 }
 ```
 
+---
+
 ## Toml
 
 ```toml
@@ -290,6 +310,8 @@ hosts = [
 ]
 ```
 
+---
+
 ## Java
 
 ```java
@@ -310,6 +332,8 @@ public abstract strictfp class L2Char extends L2Object {
   }
 }
 ```
+
+---
 
 ## JavaScript
 
@@ -337,6 +361,8 @@ function $initHighlight(block, cls) {
 export  $initHighlight;
 ```
 
+---
+
 ## Json
 
 ```json
@@ -353,6 +379,8 @@ export  $initHighlight;
   }
 ]
 ```
+
+---
 
 ## Kotlin
 
@@ -388,6 +416,8 @@ fun main() {
 }
 ```
 
+---
+
 ## Less
 
 ```less
@@ -421,6 +451,8 @@ section > .foo + #bar:hover [href*='less'] {
   color: rgba(98, 76 /* or 54 */, 231, 0.75);
 }
 ```
+
+---
 
 ## Lua
 
@@ -459,6 +491,8 @@ comment ]==]
 ]] ]=] ]==]
 ```
 
+---
+
 ## Makefile
 
 ```makefile
@@ -476,6 +510,8 @@ main:
 clean:
 	rm -rf $(BUILDDIR)/*
 ```
+
+---
 
 ## Perl
 
@@ -522,6 +558,8 @@ __END__
 =head1 NAME
 POD till the end of file
 ```
+
+---
 
 ## Php
 
@@ -592,6 +630,8 @@ datahere */
 datahere
 ```
 
+---
+
 ## Php Template
 
 ```php
@@ -604,6 +644,8 @@ echo "Hello, world!";
 ?>
 </body>
 ```
+
+---
 
 ## Python
 
@@ -621,6 +663,8 @@ class SomeClass:
 >>> message = '''interpreter
 ... prompt'''
 ```
+
+---
 
 ## Python REPL
 
@@ -641,6 +685,8 @@ foo = 42"
 >>> def test():
 ...     pass
 ```
+
+---
 
 ## R
 
@@ -693,6 +739,8 @@ iris %>%
 #> #   df.residual <int>
 ```
 
+---
+
 ## Rust
 
 ```rust
@@ -713,6 +761,8 @@ impl From<&'a str> for State {
     }
 }
 ```
+
+---
 
 ## Scss
 
@@ -797,6 +847,8 @@ a {
 }
 ```
 
+---
+
 ## Terminal
 
 ```sh
@@ -812,6 +864,8 @@ $ echo 'All
 All
 done!
 ```
+
+---
 
 ## SQL
 
@@ -829,6 +883,8 @@ REFERENCES "forum" ("id");
 insert into "topic" ("forum_id", "subject")
 values (2, 'D''artagnian');
 ```
+
+---
 
 ## Swift
 
@@ -849,6 +905,8 @@ import Foundation
   }
 }
 ```
+
+---
 
 ## Yaml
 
@@ -894,6 +952,8 @@ array_nested:
 - comment
 ```
 
+---
+
 ## TypeScript
 
 ```ts
@@ -913,6 +973,8 @@ declare magicNumber number;
 myArray.forEach(() => { }); // fat arrow syntax
 ```
 
+---
+
 ## Web Assembly
 
 ```wasm
@@ -928,3 +990,5 @@ myArray.forEach(() => { }); // fat arrow syntax
    call_indirect (type $void_to_i32))
 )
 ```
+
+---
