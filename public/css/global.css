@@ -72,3 +72,26 @@ pre[class*='language-'].line-numbers > code {
   padding-right: 0.8em;
   text-align: right;
 }
+
+pre > button {
+  border: none;
+  outline: none;
+  color: var(--color-fg-muted);
+  background-color: var(--color-canvas-subtle);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  padding: 8px 12px 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+pre > button > svg > path {
+  fill: var(--color-fg-muted);
+}
+
+pre > button:hover {
+  background-color: var(--color-border-muted);
+}
