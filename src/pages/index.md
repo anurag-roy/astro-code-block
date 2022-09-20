@@ -4,7 +4,7 @@ layout: ../layouts/indexLayout.astro
 
 ## Html
 
-```html
+```html[class="line-numbers"]
 <!DOCTYPE html>
 <title>Title</title>
 
@@ -30,7 +30,7 @@ layout: ../layouts/indexLayout.astro
 
 ## Bash
 
-```bash
+```bash[class="line-numbers"]
 #!/bin/bash
 
 ###### CONFIG
@@ -54,7 +54,7 @@ echo '"quoted"' | tr -d \" > text.txt
 
 ## C++
 
-```cpp
+```cpp[class="line-numbers"]
 #include <iostream>
 
 int main(int argc, char *argv[]) {
@@ -75,7 +75,7 @@ int main(int argc, char *argv[]) {
 
 ## C#
 
-```csharp
+```csharp[class="line-numbers"]
 using System.IO.Compression;
 
 #pragma warning disable 414, 3021
@@ -99,7 +99,7 @@ namespace MyApplication
 
 ## Css
 
-```css
+```css[class="line-numbers"]
 @font-face {
   font-family: Chunkfive;
   src: url('Chunkfive.otf');
@@ -125,7 +125,7 @@ body,
 
 ## Markdown
 
-```markdown
+```markdown[class="line-numbers"]
 # hello world
 
 you can write text [with links](http://example.com) inline or [link references][1].
@@ -153,7 +153,7 @@ you can write text [with links](http://example.com) inline or [link references][
 
 ## Diff
 
-```diff
+```diff[class="line-numbers"]
 Index: languages/ini.js
 ===================================================================
 --- languages/ini.js    (revision 199)
@@ -190,7 +190,7 @@ Index: languages/ini.js
 
 ## Ruby
 
-```ruby
+```ruby[class="line-numbers"]
 # The Greeter class
 class Greeter
   def initialize(name)
@@ -210,7 +210,7 @@ g.salute
 
 ## Go
 
-```go
+```go[class="line-numbers"]
 package main
 
 import "fmt"
@@ -229,7 +229,7 @@ func main() {
 
 ## GraphQL
 
-```graphql
+```graphql[class="line-numbers"]
 # Graphql detection template
 
 mutation Hero($episode: Episode, $withFriends: Boolean!) {
@@ -274,7 +274,7 @@ input StoryLikeSubscribeInput {
 
 ## Toml
 
-```toml
+```toml[class="line-numbers"]
 # This is a TOML document.
 
 title = "TOML Example"
@@ -314,7 +314,7 @@ hosts = [
 
 ## Java
 
-```java
+```java[class="line-numbers"]
 /**
  * @author John Smith <john.smith@example.com>
 */
@@ -337,7 +337,7 @@ public abstract strictfp class L2Char extends L2Object {
 
 ## JavaScript
 
-```js
+```js[class="line-numbers"]
 function $initHighlight(block, cls) {
   try {
     if (cls.search(/\bno\-highlight\b/) != -1)
@@ -365,7 +365,7 @@ export  $initHighlight;
 
 ## Json
 
-```json
+```json[class="line-numbers"]
 [
   {
     "title": "apples",
@@ -384,7 +384,7 @@ export  $initHighlight;
 
 ## Kotlin
 
-```kotlin
+```kotlin[class="line-numbers"]
 import kotlinx.serialization.Serializable
 import kotlin.random.Random
 
@@ -420,7 +420,7 @@ fun main() {
 
 ## Less
 
-```less
+```less[class="line-numbers"]
 @import 'fruits';
 
 @rhythm: 1.5em;
@@ -456,7 +456,7 @@ section > .foo + #bar:hover [href*='less'] {
 
 ## Lua
 
-```lua
+```lua[class="line-numbers"]
 --[[
 Simple signal/slot implementation
 ]]
@@ -495,7 +495,7 @@ comment ]==]
 
 ## Makefile
 
-```makefile
+```makefile[class="line-numbers"]
 # Makefile
 
 BUILDDIR      = _build
@@ -515,7 +515,7 @@ clean:
 
 ## Perl
 
-```perl
+```perl[class="line-numbers"]
 # loads object
 sub load
 {
@@ -563,7 +563,7 @@ POD till the end of file
 
 ## Php
 
-```php
+```php[class="line-numbers"]
 require_once 'Zend/Uri/Http.php';
 
 namespace Location\Web;
@@ -634,7 +634,7 @@ datahere
 
 ## Php Template
 
-```php
+```php[class="line-numbers"]
 <html>
 </html>
 <body>
@@ -649,7 +649,7 @@ echo "Hello, world!";
 
 ## Python
 
-```python
+```python[class="line-numbers"]
 @requires_authorization(roles=["ADMIN"])
 def somefunc(param1='', param2=0):
     r'''A docstring'''
@@ -668,7 +668,7 @@ class SomeClass:
 
 ## Python REPL
 
-```python
+```python[class="line-numbers"]
 >>> v = "foo = 42"
 >>> v
 "foo = 42"
@@ -690,7 +690,7 @@ foo = 42"
 
 ## R
 
-```r
+```r[class="line-numbers"]
 require(stats)
 
 #' Compute different averages
@@ -743,7 +743,7 @@ iris %>%
 
 ## Rust
 
-```rust
+```rust[class="line-numbers"]
 #[derive(Debug)]
 pub enum State {
     Start,
@@ -766,7 +766,7 @@ impl From<&'a str> for State {
 
 ## Scss
 
-```scss
+```scss[class="line-numbers"]
 @import 'compass/reset';
 
 // variables
@@ -851,7 +851,7 @@ a {
 
 ## Terminal
 
-```sh
+```sh[class="line-numbers"]
 $ echo $EDITOR
 vim
 $ git checkout main
@@ -869,7 +869,7 @@ done!
 
 ## SQL
 
-```sql
+```sql[class="line-numbers"]
 CREATE TABLE "topic" (
     "id" integer NOT NULL PRIMARY KEY,
     "forum_id" integer NOT NULL,
@@ -888,7 +888,7 @@ values (2, 'D''artagnian');
 
 ## Swift
 
-```swift
+```swift[class="line-numbers"]
 import Foundation
 
 @objc class Person: Entity {
@@ -910,7 +910,7 @@ import Foundation
 
 ## Yaml
 
-```yaml
+```yaml[class="line-numbers"]
 ---
 # comment
 string_1: "Bar"
@@ -956,7 +956,7 @@ array_nested:
 
 ## TypeScript
 
-```ts
+```ts[class="line-numbers"]
 class MyClass {
   public static myValue: string;
   constructor(init: string) {
@@ -977,7 +977,7 @@ myArray.forEach(() => { }); // fat arrow syntax
 
 ## Web Assembly
 
-```wasm
+```wasm[class="line-numbers"]
 (module
   (import "js" "memory" (memory 1))
   (import "js" "table" (table 1 funcref))
