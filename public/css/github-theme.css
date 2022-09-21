@@ -26,6 +26,7 @@
   --color-accent-fg: #0969da;
   --color-accent-emphasis: #0969da;
   --color-danger-fg: #cf222e;
+  --mix-blend-mode: darken;
 }
 
 html[data-color-theme='dark'] {
@@ -54,6 +55,7 @@ html[data-color-theme='dark'] {
   --color-accent-fg: #58a6ff;
   --color-accent-emphasis: #1f6feb;
   --color-danger-fg: #f85149;
+  --mix-blend-mode: lighten;
 }
 
 .token.keyword,

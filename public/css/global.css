@@ -18,10 +18,11 @@ hr {
 }
 
 pre {
+  position: relative;
   padding: 2em;
   background-color: var(--color-canvas-subtle);
   border-color: var(--color-border-default);
-  border-radius: 10px;
+  border-radius: 8px;
   line-height: 18.2px;
   overflow-x: auto;
   font-size: 13px;
@@ -49,8 +50,7 @@ pre[class*='language-'].line-numbers > code {
   pointer-events: none;
   top: 0;
   font-size: 100%;
-  left: calc(-3ch - 0.8em);
-  width: 3ch; /* works for line-numbers below 1000 lines */
+  left: calc(-3ch - 2em - 0.8em);
   letter-spacing: -1px;
   text-align: end;
 
@@ -69,22 +69,38 @@ pre[class*='language-'].line-numbers > code {
   content: counter(linenumber);
   color: #999;
   display: block;
+  padding-left: 2em;
   padding-right: 0.8em;
   text-align: right;
 }
 
+.line-numbers span.line-numbers-rows > span {
+  position: relative;
+}
+
+.line-numbers span.line-numbers-rows > span::after {
+  content: ' ';
+  background: var(--color-border-default);
+  opacity: 0.3;
+  mix-blend-mode: var(--mix-blend-mode);
+  width: var(--highlight-width, 0);
+  position: absolute;
+  top: 0;
+  left: -2em;
+}
+
 pre > button {
+  display: flex;
   border: none;
   outline: none;
   color: var(--color-fg-muted);
   background-color: var(--color-canvas-subtle);
-  display: flex;
   align-items: center;
   position: absolute;
-  top: 2em;
-  right: 2em;
+  top: 0;
+  right: 0;
   padding: 8px 12px 7px 12px;
-  border-radius: 5px;
+  border-bottom-left-radius: 8px;
   cursor: pointer;
 }
 

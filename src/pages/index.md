@@ -4,7 +4,7 @@ layout: ../layouts/indexLayout.astro
 
 ## Html
 
-```html[class="line-numbers"]
+```html[class="line-numbers"][data-line="2-5"]
 <!DOCTYPE html>
 <title>Title</title>
 
@@ -668,7 +668,7 @@ class SomeClass:
 
 ## Python REPL
 
-```python[class="line-numbers"]
+```python
 >>> v = "foo = 42"
 >>> v
 "foo = 42"
@@ -851,7 +851,7 @@ a {
 
 ## Terminal
 
-```sh[class="line-numbers"]
+```sh
 $ echo $EDITOR
 vim
 $ git checkout main
