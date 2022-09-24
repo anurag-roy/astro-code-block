@@ -3,6 +3,11 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--color-fg-default);
+  transition-duration: 0.2s;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,6 +15,30 @@ body {
   max-width: 840px;
   margin-inline: auto;
   background-color: var(--color-canvas-default);
+}
+
+@font-palette-values --dark {
+  font-family: Nabla;
+  base-palette: 0;
+}
+
+@font-palette-values --light {
+  font-family: Nabla;
+  base-palette: 1;
+}
+
+h1,
+h2 {
+  font-family: 'Nabla';
+  font-palette: var(--palette);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 hr {
@@ -25,7 +54,7 @@ pre {
   border-radius: 8px;
   line-height: 18.2px;
   overflow-x: auto;
-  font-size: 13px;
+  font-size: 13.5px;
 }
 
 pre,

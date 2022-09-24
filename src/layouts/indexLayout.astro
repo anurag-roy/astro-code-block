@@ -1,9 +1,9 @@
 ---
-import ThemeSwitcher from '../components/ThemeSwitcher.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-color-theme="light">
+<html lang="en" data-color-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,12 +14,32 @@ import ThemeSwitcher from '../components/ThemeSwitcher.astro';
       href="https://fonts.googleapis.com/css2?family=Cousine&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/github-theme.css" />
     <link rel="stylesheet" href="css/global.css" />
-    <title>Code Block</title>
+    <title>Code Block Demo</title>
+    <style>
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 0.5em;
+      }
+    </style>
   </head>
   <body>
-    <ThemeSwitcher />
+    <header>
+      <img src="favicon.png" height="48px" width="48px" alt="Code Block Logo" />
+      <h1>Code Block Demo</h1>
+      <ThemeToggle />
+    </header>
     <slot />
     <script src="scripts/addLineHighlight.js" defer></script>
     <script src="scripts/addCopyButton.js" defer></script>
