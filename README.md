@@ -8,6 +8,8 @@ Beautiful code blocks for your blog or slides or whatever really, powered by [Pr
 
 </div>
 
+[Demo](https://astro-code-block.pages.dev/)
+
 ---
 
 ### Features

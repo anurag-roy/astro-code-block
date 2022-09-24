@@ -7,7 +7,7 @@ import ThemeToggle from '../components/ThemeToggle.astro';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,8 +22,8 @@ import ThemeToggle from '../components/ThemeToggle.astro';
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/github-theme.css" />
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="/css/github-theme.css" />
+    <link rel="stylesheet" href="/css/global.css" />
     <title>Code Block Demo</title>
     <style>
       header {
@@ -41,7 +41,7 @@ import ThemeToggle from '../components/ThemeToggle.astro';
       <ThemeToggle />
     </header>
     <slot />
-    <script src="scripts/addLineHighlight.js" defer></script>
-    <script src="scripts/addCopyButton.js" defer></script>
+    <script src="/scripts/addLineHighlight.js" defer></script>
+    <script src="/scripts/addCopyButton.js" defer></script>
   </body>
 </html>
