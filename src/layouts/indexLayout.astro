@@ -1,5 +1,6 @@
 ---
 import ThemeToggle from '../components/ThemeToggle.astro';
+import GitHubRepoLink from '../components/GitHubRepoLink.astro';
 ---
 
 <!DOCTYPE html>
@@ -31,21 +32,29 @@ import ThemeToggle from '../components/ThemeToggle.astro';
         align-items: center;
         justify-content: start;
         gap: 0.5em;
+        position: sticky;
+        top: 0;
+        background-color: var(--color-canvas-default);
+        z-index: 2;
       }
     </style>
   </head>
   <body>
     <header>
-      <img
-        src="/favicon.png"
-        height="48px"
-        width="48px"
-        alt="Code Block Logo"
-      />
+      <a href="/">
+        <img
+          src="/favicon.png"
+          height="48px"
+          width="48px"
+          alt="Code Block Logo"
+        />
+      </a>
       <h1>Code Block Demo</h1>
       <ThemeToggle />
+      <GitHubRepoLink />
     </header>
     <slot />
+    <a href="https://github.com/anurag-roy/astro-code-block">Source</a>
     <script src="/scripts/addLineHighlight.js" defer></script>
     <script src="/scripts/addCopyButton.js" defer></script>
   </body>
