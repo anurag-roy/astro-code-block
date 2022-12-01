@@ -67,13 +67,11 @@ pre * {
 
 /* Adapted from prismjs/plugins/line-numbers/prism-line-numbers.css */
 pre[class*='language-'].line-numbers {
-  position: relative;
   padding-left: calc(2em + 3ch + 0.8em);
   counter-reset: linenumber;
 }
 
 pre[class*='language-'].line-numbers > code {
-  position: relative;
   white-space: inherit;
 }
 
@@ -82,9 +80,10 @@ pre[class*='language-'].line-numbers > code {
   pointer-events: none;
   top: 0;
   font-size: 100%;
-  left: calc(-3ch - 2em - 0.8em);
-  letter-spacing: -1px;
+  left: 0;
+  top: 2em;
   text-align: end;
+  background-color: var(--color-canvas-subtle);
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -122,6 +121,7 @@ pre[class*='language-'].line-numbers > code {
 }
 
 div.remark-highlight > button {
+  font-family: 'Cousine', monospace;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -130,10 +130,10 @@ div.remark-highlight > button {
   color: var(--color-fg-muted);
   background-color: var(--color-canvas-subtle);
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 4px;
+  right: 5px;
   padding: 8px 12px 7px 12px;
-  border-bottom-left-radius: 8px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
