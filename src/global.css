@@ -46,8 +46,11 @@ hr {
   border-color: var(--color-canvas-subtle);
 }
 
-pre {
+div.remark-highlight {
   position: relative;
+}
+
+pre {
   padding: 2em;
   background-color: var(--color-canvas-subtle);
   border-color: var(--color-border-default);
@@ -118,13 +121,14 @@ pre[class*='language-'].line-numbers > code {
   left: -2em;
 }
 
-pre > button {
+div.remark-highlight > button {
   display: flex;
+  gap: 8px;
+  align-items: center;
   border: none;
   outline: none;
   color: var(--color-fg-muted);
   background-color: var(--color-canvas-subtle);
-  align-items: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -133,10 +137,10 @@ pre > button {
   cursor: pointer;
 }
 
-pre > button > svg > path {
+div.remark-highlight > button > svg > path {
   fill: var(--color-fg-muted);
 }
 
-pre > button:hover {
+div.remark-highlight > button:hover {
   background-color: var(--color-border-muted);
 }
