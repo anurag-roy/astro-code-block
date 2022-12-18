@@ -4,7 +4,7 @@ layout: ../layouts/indexLayout.astro
 
 ## Html
 
-```html[class="line-numbers"][data-line="9-15"]
+```html[class="line-numbers"][data-line="10-14"]
 <!DOCTYPE html>
 <title>Title</title>
 

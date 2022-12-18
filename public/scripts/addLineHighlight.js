@@ -19,7 +19,7 @@ function highlightCode(pre, highlightRanges, lineNumberRowsContainer) {
       //   );
       lineNumberSpan.style.setProperty(
         '--highlight-width',
-        `calc(${preWidth}px + 2em - 4px)`
+        `calc(${preWidth}px)`
       );
       lineNumberSpan.style.setProperty(
         'border-left',
