@@ -126,12 +126,11 @@ div.remark-highlight > button {
   gap: 8px;
   align-items: center;
   border: none;
-  outline: none;
   color: var(--color-fg-muted);
   background-color: var(--color-canvas-subtle);
   position: absolute;
-  top: 4px;
-  right: 5px;
+  top: 0;
+  right: 0;
   padding: 8px 12px 7px 12px;
   border-radius: 8px;
   cursor: pointer;
